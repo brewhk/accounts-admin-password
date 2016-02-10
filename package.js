@@ -2,7 +2,7 @@ Package.describe({
   name: 'brewhk:accounts-admin-password',
   version: '0.0.1',
   summary: 'Allows administrators to login as any user',
-  git: '',
+  git: 'https://github.com/brewhk/accounts-admin-password.git',
   documentation: 'README.md'
 });
 
