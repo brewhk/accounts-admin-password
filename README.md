@@ -4,6 +4,25 @@
 
 This is different from the [`gwendall:impersonate`](https://github.com/gwendall/meteor-impersonate) package, which will reverse back to the admin user whenever a user refreshes.
 
+### Usage
+
+Add the package to your project
+
+    meteor add brewhk:accounts-admin-password
+
+Use `Meteor.loginWithAdminPassword` *exactly* the same way as you would with [`Meteor.loginWithPassword`](http://docs.meteor.com/#/full/meteor_loginwithpassword), but with the admin's password instead of the user's password. Like `Meteor.loginWithPassword`, `Meteor.loginWithAdminPassword` is only available on the client.
+
+E.g.
+
+    // Login with admin password
+		Meteor.loginWithAdminPassword(user, password, function (error) {
+			if(!error) {
+				// Success
+			} else {
+				// Failure
+			}
+		});
+
 ### Mechanism
 
 ##### `Meteor.loginWithAdminPassword`
